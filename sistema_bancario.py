@@ -1,3 +1,16 @@
+"""
+Este código implementa um sistema simples de operações bancárias em Python. Ele permite que o usuário realize depósitos, saques, visualize o extrato das transações realizadas e saia do programa.
+
+O usuário interage com o sistema por meio de um menu que oferece quatro opções: Depositar (d), Sacar (s), Extrato (e) e Sair (x).
+O saldo inicial da conta é definido como zero, e há um limite máximo de saque de R$500,00 por transação e um limite diário de três saques.
+Quando o usuário escolhe depositar, ele é solicitado a inserir um valor que, se válido, é adicionado ao saldo da conta e registrado no extrato.
+Para sacar, o usuário deve inserir um valor que não exceda o saldo da conta, o limite de saque ou o número máximo de saques diários permitidos. Se todas as condições forem satisfeitas, o valor é subtraído do saldo e registrado no extrato.
+
+A opção de extrato permite que o usuário veja um histórico de todas as transações realizadas.
+A opção de sair encerra o programa.
+
+Esse código fornece uma interface básica para gerenciar transações financeiras de maneira interativa.
+"""
 saldo = 0 
 limite = 500
 extrato = ""
